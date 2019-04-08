@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>City temperature</title>
+</head>
+<body>
+
+<form action="/temperature/city">
+    <LABEL>Miasto</LABEL>
+    <input type="text" name="city">
+    <input type="submit" value="Temperatura">
+</form>
+<h2 th:if="${temperature}">Temperatura:</h2>
+<p th:text="${temperature}"></p>
+</body>
+</html>
