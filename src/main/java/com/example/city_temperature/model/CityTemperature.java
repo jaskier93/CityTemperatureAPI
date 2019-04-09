@@ -2,33 +2,30 @@ package com.example.city_temperature.model;
 
 public class CityTemperature {
 
-    private Temperature main;
+      private TemperatureInfo main;
 
-    public Temperature getMain() {
+
+    public TemperatureInfo getMain() {
         return main;
     }
 
-    public void setMain(Temperature main) {
+    public void setMain(TemperatureInfo main) {
         this.main = main;
     }
 
-    public static class Temperature {
-        private double temperature;
+    public static class TemperatureInfo {
+        private double temp;
 
-        public double getTemperature() {
-            return temperature;
+        public double getTemp() {
+            return temp;
         }
 
-        //convert kelvins into celsium temperature
-        public double getCelsiumTemperature() {
-            return (temperature - 273.15);
+        public double getTempInCelsiumDegrees() {
+            return (temp -273.15);
         }
 
-        public void setTemperature(double temperature) {
-            this.temperature = temperature;
+        public void setTemp(double temp) {
+            this.temp = temp;
         }
-
-
-
     }
 }

@@ -5,17 +5,17 @@
     <title>City temperature</title>
 </head>
 <body>
-<h1>City?</h1>
+<div align="center">
 
-<form action="/temperature/city">
-    <label>Miasto</label>
-    <input type="text" name="city">
-    <input type="submit" value="Pogoda">
+ <form action="/temperature/city"><br><br><br><br>
+   <h3> <label>Podaj nazwę miasta :</label><br>
+    <input type="text" name="city" required="true"><br>
+       <input type="submit" value="Wyślij"></h3>
 </form>
 
-<h3 th:if="${temperature}">Pogoda:</h3>
+<h3 th:if="${temperature}">Temperatura: </h3>
 
 <p th:text="${temperature}"/>
-
+</div>
 </body>
 </html>
