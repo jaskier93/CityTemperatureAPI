@@ -20,6 +20,7 @@ public class CityTemperature {
             return temp;
         }
 
+        //converted temperature : kelvins -->celsium degrees
         public double getTempInCelsiumDegrees() {
             return (temp -273.15);
         }

@@ -8,12 +8,12 @@
 <div align="center">
 
  <form action="/temperature/city"><br><br><br><br>
-   <h3> <label>Podaj nazwę miasta :</label><br>
-    <input type="text" name="city" required="true"><br>
-       <input type="submit" value="Wyślij"></h3>
+   <h2> <label>Podaj nazwę miasta :</label><br>
+    <input type="text" name="city" required="true" typeof="text"><br>
+       <input type="submit" value="Wyślij"></h2>
 </form>
 
-<h3 th:if="${temperature}">Temperatura: </h3>
+<h2 th:if="${temperature}">Temperatura: </h2>
 
 <p th:text="${temperature}"/>
 </div>

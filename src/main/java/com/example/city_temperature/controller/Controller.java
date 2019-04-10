@@ -14,7 +14,6 @@ public class Controller {
 
     TempService tempService = new TempService();
 
-   // @ResponseBody
     @GetMapping("/")
     public String index() {
         String url = "http://api.openweathermap.org/data/2.5/weather?q=Warszawa&appid=ef2028e98b54649bf1f4c4582631f350";
@@ -23,7 +22,6 @@ public class Controller {
 
         CityTemperature cityTemperature = restTemplate.getForObject(url, CityTemperature.class);
 
-       // return "" + cityTemperature.getMain().getTempInCelsiumDegrees() + "";
         return "index";
     }
 
